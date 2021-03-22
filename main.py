@@ -21,8 +21,7 @@ if __name__ == '__main__':
     sortAlg.quick_sort(b, 0, len(b)-1)
     print(f'\nQuick Sort: {b}')
 
-    sortAlg.bubble_sort([2, 3, 5, 1, 4, 6, 8, 7])
-    print('Bubble Sort: ')
+    print(f'Bubble Sort: {sortAlg.bubble_sort([2, 3, 5, 1, 4, 6, 8, 7])}')
 
     sortAlg.merge_sort([2, 3, 5, 1, 4, 6, 8, 7])
     print('Merge Sort: ')

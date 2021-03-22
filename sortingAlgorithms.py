@@ -28,9 +28,18 @@ def quick_sort(arr, start, end):
 # Complexity
 # Worst Case O(n^2)
 # Best Case O(n)
-# Avg Case O(n*log(n))
+# Avg Case O(n^2)
+# pretty bad tbh
 def bubble_sort(unsorted_list):
-    print(f'{unsorted_list}')
+    for x in range(len(unsorted_list)):
+        swap_flag = False
+        for y in range(len(unsorted_list)-1):
+            if(unsorted_list[y] > unsorted_list[y+1]):
+                swap_flag=True
+                unsorted_list[y], unsorted_list[y+1] = unsorted_list[y+1], unsorted_list[y]
+        if not swap_flag:
+            break
+    return unsorted_list
 
 
 # Complexity

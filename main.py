@@ -21,11 +21,15 @@ if __name__ == '__main__':
     sortAlg.quick_sort(b, 0, len(b)-1)
     print(f'\nQuick Sort: {b}')
 
-    print(f'Bubble Sort: {sortAlg.bubble_sort([2, 3, 5, 1, 4, 6, 8, 7])}')
+    b = [2, 3, 5, 1, 4, 6, 8, 7]
+    sortAlg.bubble_sort(b)
+    print(f'Bubble Sort: {b}')
 
-    sortAlg.merge_sort([2, 3, 5, 1, 4, 6, 8, 7])
-    print('Merge Sort: ')
+    b = [2, 3, 5, 1, 4, 6, 8, 7]
+    b = sortAlg.merge_sort(b)
+    print(f'Merge Sort: {b}')
 
-    sortAlg.radix_sort([2, 3, 5, 1, 4, 6, 8, 7])
-    print('Radix Sort: ')
+    b = [2, 3, 5, 1, 4, 6, 8, 7]
+    sortAlg.radix_sort(b)
+    print(f'Radix Sort: {b}')
 
